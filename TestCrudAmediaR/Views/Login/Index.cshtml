@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link rel="stylesheet" href="/css/login.css">
+ <div class="row full-height justify-content-center">
+        <div class="col-12 text-center align-self-center py-5">
+          <div class="section pb-5 pt-5 pt-sm-2 text-center">
+            <div class="card-3d-wrap mx-auto">
+              <div class="card-3d-wrapper">
+              <form asp-action="Login" >
+                  <div class="card-front">
+                    <div class="center-wrap">
+                      <div class="section text-center">
+                        <h4 class="mb-4 pb-3">Iniciar Sesión</h4>
+                        <div class="form-group">
+                          <input type="text" name="userName" class="form-style" placeholder="Usuario" id="logname"
+                            autocomplete="off" required>
+                         <i class="input-icon uil uil-user"></i>
+                        </div>
+                        <div class="form-group mt-2 needs-validation mb-3">
+                          <input type="password" name="password" class="form-style" placeholder="Contraseña"
+                            id="logpass" autocomplete="off" required>
+                          <i class="input-icon uil uil-lock-alt"></i>
+                        </div>
+                        <input type="submit" class="btn" value="Entrar">
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
