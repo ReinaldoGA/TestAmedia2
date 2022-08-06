@@ -13,7 +13,13 @@ namespace TestCrudAmediaR.Services
             try
             {
 
-                  var usuario  = _context.tUsers.Where(b => b.txt_user == userName && b.txt_password == Pass);
+                var usuario = new tUsers
+                {
+                    txt_user = userName,    
+                    txt_password = Pass,
+                    cod_rol = 1,
+
+                };//_context.tUsers.Where(b => b.txt_user == userName && b.txt_password == Pass);
 
                     if (usuario.Count() > 0)
                     {
